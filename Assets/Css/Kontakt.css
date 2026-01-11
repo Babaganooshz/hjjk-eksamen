@@ -129,7 +129,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
-
 }
 
 .dropdown:hover .dropdown-menu {
@@ -138,11 +137,11 @@ header {
 
 /* Kontakt information */
 .contact-info {
+flex: 1;
 background-color: var(--lightGray);
 padding: 2rem;
 border-radius: 6px;
 line-height: 2;
-flex: 1;
 }
 
 /* Formular */
@@ -174,17 +173,16 @@ label {
 }
 
 .contact-formular {
-  border-radius: 5px;
-  padding: 20px;
-  flex: 2;
+flex: 2;
+padding: 2rem;
 }
 
 .contact-wrapper {
-    display: flex;
-  align-items: flex-start; 
-  gap: 4rem;
-  max-width: 1200px;
-  margin: 0 auto; 
+display: flex;
+align-items: stretch;
+gap: 4rem;
+max-width: 1200px;
+margin: 0 auto;
 }
 
 /*Footer Start*/
@@ -210,3 +208,10 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* Mediaqueries */
+@media (max-width: 600px) { 
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    }
