@@ -14,31 +14,47 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="header-logo">
-                <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-                </a>
-            </div>
 
-            <nav class="header-links">
-                <a href="Arrangementer.html">Arrangementer</a>
-                <a href="Om.klubben.html">Om klubben</a>
-                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
-                <a href="Praktisk.information.html">Praktisk information</a>
-                <a href="Kontakt.html">Kontakt</a>
-            </nav>
-            <div class="language-switcher">
-                <a href="#">
-                    <p class="language">DK</p>
-                </a>
-                <a href="#">
-                    <p class="language">EN</p>
-                </a>
-            </div>
+        <div class="header-logo">
+            <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
         </div>
+
+        <ul class="header-links">
+            <li><a href="Arrangementer.html">Arrangementer</a></li>
+
+            <li class="dropdown">
+                <a href="Om.klubben.html">Om klubben</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Budo.regler.html">Budo regler</a></li>
+                    <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Praktisk.information.html">Praktisk information</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="language-switcher">
+            <a href="#">
+                <p class="language">DK</p>
+            </a>
+            <a href="#">
+                <p class="language">EN</p>
+            </a>
+        </div>
+
     </header>
 
     <img src="assets/IMG/Headericoon.svg" alt="Hjørring Jiu-Jitsu Klub Banner" class="header-banner">
+    <h1>Klubbens love og vedtægter</h1>
     <div class="vedtaegter">
         <details class="text-dropdown">
             <summary>1. NAVN OG HJEMSTED...</summary>
@@ -248,15 +264,16 @@
             </div>
 
             <div class="footer-links">
-                <a href="#">Kontakt os her</a>
-                <a href="#">Holdtider</a>
-                <a href="#">Praktisk information</a>
+                <a href="Kontakt.html">Kontakt os her</a>
+                <a href="Om.klubben.html">Holdtider</a>
+                <a href="Praktisk.information.html">Praktisk information</a>
             </div>
 
         </div>
 
         <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
     </footer>
+
 
 </body>
 

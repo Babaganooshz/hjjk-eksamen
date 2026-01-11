@@ -21,49 +21,62 @@ a:visited {
     color: #3C3C3C
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+br {
+    margin: 10px;
+    position: fixed;
+}
+
+
+
+
 /* Header start */
 header {
-    width: 100%;
-    background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    max-height: 70px;
-    padding-bottom: 25px;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
     max-width: 100%;
-    padding: 20px 20px;
-    max-height: 60px;
-
-}
-
-.header-links {
+    background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-block: 20px;
+    max-height: 60px;
+    padding-inline: 10px;
     align-items: center;
-    gap: 40px;
-    width: 90%;
-
 }
 
-/*Header+Footer*/
+
+
 .language-switcher {
     display: flex;
-    align-items: right;
-    gap: 10px;
+    justify-content: right;
     font-weight: bold;
+    padding: none;
 }
 
+/*Header + Footer*/
 .header-links a,
 .language-switcher a,
 .footer-links a {
-    color: black;
-    text-decoration: none;
+    color: #3C3C3C;
+    justify-content: center;
     font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    max-width: 90%;
+}
+
+.header-container,
+.footer-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 10px;
+    max-height: 60px;
+    padding-bottom: 25px;
+
 }
 
 .header-links a:hover,
@@ -75,36 +88,49 @@ header {
 
 .footer-logo img,
 .header-logo img {
-    height: 60px;
+    height: 70px;
+}
+
+/*Dropdown Menu*/
+.header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 
 
 
 
-
-
-
-
-/*Start dit indhold her*/
-
-
-
-
-
-
-
-
-
-
-/*Footer*/
+/*Footer Start*/
 footer {
     width: 100%;
     background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
     max-height: 70px;
     padding-top: 50px;
-
+    padding-inline: 10px;
 }
 
 .footer-links {
@@ -113,23 +139,12 @@ footer {
     align-items: center;
     gap: 40px;
     width: 90%;
-    padding-right: 144.5px;
-}
 
+}
 
 .footer-text {
     background-color: black;
     color: white;
     text-align: center;
     font-size: 14px;
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    max-width: 100%;
-    padding: 20px 20px 0px 20px;
-    max-height: 60px;
 }
