@@ -138,10 +138,11 @@ header {
 
 /* Kontakt information */
 .contact-info {
-    padding: var(--lgSpacer);
-    border-radius: 5px;
-    align-self: flex-start;
-    line-height: 2;
+background-color: var(--lightGray);
+padding: 2rem;
+border-radius: 6px;
+line-height: 2;
+flex: 1;
 }
 
 /* Formular */
@@ -175,12 +176,15 @@ label {
 .contact-formular {
   border-radius: 5px;
   padding: 20px;
-  width: 50%;
+  flex: 2;
 }
 
 .contact-wrapper {
     display: flex;
-    align-items: center;
+  align-items: flex-start; 
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto; 
 }
 
 /*Footer Start*/
