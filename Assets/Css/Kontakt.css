@@ -149,14 +149,30 @@ text-align: center;
 /* Figur */
 .figure {
 position: absolute;
-top: 40%; 
-left: 25%;              
+top: 33%; 
+left: 22%;              
 transform: translate(-50%, -50%); 
 width: 200px;           
 height: auto;
 }
 
 .figure img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Kort */
+.map {
+position: absolute;
+top: 67%; 
+left: 25%;              
+transform: translate(-50%, -50%); 
+width: 600px;           
+height: auto;
+}
+
+.map img {
 width: 100%;
 height: auto;
 display: block;
@@ -229,7 +245,7 @@ font-size: 14px;
 }
 
 /* Mediaqueries */
-@media (max-width: 600px) { 
+@media (max-width: 500px) { 
 .contact-wrapper {
 flex-direction: column;
 }
