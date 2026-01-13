@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kasse-layout</title>
+    <style>
+        :root {
+            --white: #fff;
+            --gray: #7c7c7c;
+            --page-gray: #eee;
+            --gap: 18px;
+            --pad: 18px;
+            --radius: 6px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: #fff;
+            color: #111;
+        }
+
+        /* Top grøn bar (som på skitsen) */
+        .hero-img {
+            height: 140px;
+            background: var(--white);
+        }
+
+        /* Side “baggrund” */
+        .page {
+            background: var(--page-gray);
+            padding: 22px 18px 34px;
+        }
+
+        /* Kasse 1: yder-rammen */
+        .kasse-1 {
+            background: var(--white);
+            padding: var(--pad);
+            border-radius: var(--radius);
+        }
+
+        /* Kasse 2: øverste sektion med 2 kolonner */
+        .kasse-2 {
+            display: flex;
+            gap: var(--gap);
+            margin-bottom: var(--gap);
+        }
+
+        /* Kasse 3 (venstre stor) og Kasse 4 (højre sidebar) */
+        .kasse-3,
+        .kasse-4 {
+            background: var(--gray);
+            border-radius: var(--radius);
+            padding: var(--pad);
+            min-height: 380px;
+        }
+
+        .kasse-3 {
+            flex: 1 1 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .kasse-3 .liste {
+            width: 55%;
+            min-width: 220px;
+            background: var(--teal);
+            color: #fff;
+            padding: 18px 16px;
+            text-align: center;
+            border-radius: var(--radius);
+            margin-top: 18px;
+        }
+
+        .kasse-4 {
+            flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            padding: var(--pad);
+        }
+
+        /* Sidebar indhold (logo + column + row) */
+        .logo {
+            background: var(--teal);
+            color: #fff;
+            border-radius: var(--radius);
+            height: 160px;
+            display: grid;
+            place-items: center;
+            font-weight: 600;
+        }
+
+        .sidebar-column {
+            background: var(--teal);
+            border-radius: var(--radius);
+            padding: var(--pad);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1;
+        }
+
+        .sidebar-box {
+            background: var(--gray);
+            color: #fff;
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .row-3 {
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+        }
+
+        .row-3 .small {
+            flex: 1;
+            min-height: 54px;
+            display: grid;
+            place-items: center;
+            padding: 10px;
+        }
+
+        /* Kasse 5: nederste store område */
+        .kasse-5 {
+            background: var(--gray);
+            border-radius: var(--radius);
+            padding: var(--pad);
+            min-height: 520px;
+
+            /* vigtigt for Kasse 6 absolute */
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+        /* Kasse 6: absolut placeret inde i Kasse 5 */
+        .kasse-6 {
+            position: absolute;
+            right: 28px;
+            bottom: 28px;
+            background: var(--teal);
+            color: #fff;
+            border-radius: var(--radius);
+            padding: 18px 16px;
+            width: 260px;
+            z-index: 10;
+            /* “Husk z-index” */
+        }
+
+        /* Titler (Kasse labels) */
+        .label {
+            font-weight: 600;
+            margin: 0 0 10px;
+            color: #111;
+        }
+
+        /* Responsiv: stack sidebar under venstre på små skærme */
+        @media (max-width: 900px) {
+            .kasse-2 {
+                flex-direction: column;
+            }
+
+            .kasse-4 {
+                flex: 1 1 auto;
+            }
+
+            .kasse-3 .liste {
+                width: 100%;
+            }
+
+            .kasse-6 {
+                width: min(260px, 80%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-img"></div>
+
+    <div class="page">
+        <!-- Kasse 1 -->
+        <div class="kasse-1">
+            <div class="label">Kasse 1</div>
+
+            <!-- Kasse 2 -->
+            <div class="kasse-2">
+                <!-- Kasse 3 -->
+                <div class="kasse-3">
+                    <div style="width:100%;">
+                        <div class="label">Kasse 3</div>
+                    </div>
+
+                    <div>tekst</div>
+                    <div class="liste">Liste</div>
+                </div>
+
+                <!-- Kasse 4 -->
+                <div class="kasse-4">
+                    <div class="label">Kasse 4</div>
+
+                    <div class="logo">Logo</div>
+
+                    <div class="sidebar-column">
+                        <div class="sidebar-box">Tekst</div>
+                        <div class="sidebar-box">Div (column)</div>
+
+                        <div class="sidebar-box">
+                            3 firkanter (ROW)
+                            <div class="row-3" style="margin-top:12px;">
+                                <div class="sidebar-box small">1</div>
+                                <div class="sidebar-box small">2</div>
+                                <div class="sidebar-box small">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kasse 5 -->
+            <div class="kasse-5">
+                <div class="label" style="position:absolute; top:18px; left:18px;">Kasse 5</div>
+                <div>tekst</div>
+
+                <!-- Kasse 6 -->
+                <div class="kasse-6">
+                    <div style="font-weight:700;">Kasse 6</div>
+                    <div>Rød ninja billede position (absolute)</div>
+                    <div style="margin-top:10px;">Husk z-index</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
