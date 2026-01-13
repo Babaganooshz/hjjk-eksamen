@@ -12,6 +12,8 @@ h6 {
     letter-spacing: 1px;
 }
 
+
+
 a:link {
     text-decoration: none;
 }
@@ -25,6 +27,9 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
 }
 
 br {
@@ -33,7 +38,32 @@ br {
 }
 
 
+/*Footer Start*/
+footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    /*     max-height: 70px; */
+    /*     padding-top: 50px; */
+    /*     padding-inline: 10px; */
+}
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+
+}
+
+.footer-text {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
 
 /* Header start */
 header {
@@ -46,6 +76,16 @@ header {
     padding-inline: 10px;
     align-items: center;
 }
+
+.burger,
+.globe {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #3C3C3C;
+}
+
 
 
 
@@ -73,10 +113,8 @@ header {
     display: flex;
     align-items: center;
     max-width: 100%;
-    padding-top: 10px;
-    max-height: 60px;
-    padding-bottom: 25px;
-
+    /*     max-height: 70px; */
+    padding: 10px;
 }
 
 .header-links a:hover,
@@ -120,101 +158,20 @@ header {
     display: block;
 }
 
-/*Footer Start*/
-footer {
-    width: 100%;
-    background-color: #FFFFFF;
-    max-height: 70px;
-    padding-top: 50px;
-    padding-inline: 10px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 90%;
-
-}
-
-.footer-text {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* ===== HISTORIE SIDE ===== */
-
-.historie {
-    background-color: #f5f5f5;
-}
-
-/* HERO */
-.historie-hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* CONTENT GRID */
-.historie-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-}
-
-/* TEKST */
-.historie-tekst h1 {
-    margin-bottom: 1.5rem;
-}
-
-.historie-tekst p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-}
-
-/* BILLEDER */
-.historie-billede {
-    width: 100%;
-    max-width: 260px;
-    margin: 2rem 0;
-}
-
-/* FIGURER */
-.figur {
-    width: 120px;
-    margin: 2rem 0;
-}
-
-.figur-top {
-    align-self: flex-end;
-}
-
-.figur-bottom {
-    align-self: flex-start;
-}
-
-
-/* ===== RESPONSIV ===== */
 @media (max-width: 768px) {
-
-    .historie-content {
-        grid-template-columns: 1fr;
+    .burger {
+        display: block;
     }
 
-    .historie-side {
+    .globe {
+        display: block;
+    }
+
+    .language-switcher {
         display: none;
     }
 
-    .figur,
-    .historie-billede {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .header-links {
+        display: none;
     }
 }

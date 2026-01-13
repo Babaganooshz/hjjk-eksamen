@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Hjørring Jiu-Jitsu Klub-Forside" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="assets/CSS.Sheets/shared.css">
     <link rel="stylesheet" href="assets/CSS.Sheets/Arrangementer.css">
     <title>Hjørring Jiu-Jitsu Klub-Forside</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,64 +13,152 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-<header>
 
-    <div class="header-logo">
-        <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-    </div>
+<body>
+    <header>
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu">
+            ☰
+        </button>
 
-    <ul class="header-links">
-        <li><a href="Arrangementer.html">Arrangementer</a></li>
-
-        <li class="dropdown">
-            <a href="Om.klubben.html">Om klubben</a>
-            <ul class="dropdown-menu">
-                <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
-
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
-            <ul class="dropdown-menu">
-                <li><a href="Budo.regler.html">Budo regler</a></li>
-                <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
-
-            </ul>
-        </li>
-        <li><a href="Praktisk.information.html">Praktisk information</a></li>
-        <li><a href="Kontakt.html">Kontakt</a></li>
-    </ul>
-    <div class="language-switcher">
-        <a href="#">
-            <p class="language">DK</p>
-        </a>
-        <a href="#">
-            <p class="language">EN</p>
-        </a>
-    </div>
-
-</header>
-
-
-
-
-
-
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+        <div class="header-logo">
+            <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
         </div>
 
-        <div class="footer-links">
-            <a href="Kontakt.html">Kontakt os her</a>
-            <a href="Om.klubben.html">Holdtider</a>
-            <a href="Praktisk.information.html">Praktisk information</a>
+        <ul class="header-links">
+            <li><a href="Arrangementer.html">Arrangementer</a></li>
+
+            <li class="dropdown">
+                <a href="Om.klubben.html">Om klubben</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Budo.regler.html">Budo regler</a></li>
+                    <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Praktisk.information.html">Praktisk information</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="language-switcher">
+            <a href="#">
+                <p class="language">DK</p>
+            </a>
+            <a href="#">
+                <p class="language">EN</p>
+            </a>
+        </div>
+        <button class="globe" aria-expanded="false" aria-controls="mobile-menu">
+            🌐
+        </button>
+    </header>
+
+    <main class="arrangementer">
+
+        <!-- EVENT 1 -->
+        <article class="event">
+
+            <!-- KASSE 3 -->
+            <div class="event-text">
+                <h2>World Alliance of Martial Arts 2025</h2>
+
+                <p>
+                    World Alliance of Martial Arts (WAMA) afholder nationalt kursus i Danmark
+                    søndag den 5. april 2025 i Aalborg fra kl. 09.30 til 15.30.
+                </p>
+
+                <p>
+                    Kurset arrangeres af Aalborg Jiu-Jitsu Klub, som hermed inviterer til årets
+                    første WAMA-kursus.
+                </p>
+
+                <h3>Instruktører</h3>
+                <ul>
+                    <li>Søren Lie, 6. Dan</li>
+                    <li>Allan Rostgaard, 4. Dan</li>
+                    <li>Nikola Jikogh, 2. Dan</li>
+                </ul>
+
+                <p>
+                    Prisen inkluderer kompendium. Medlemskab af WAMA kan tegnes
+                    for et engangsbeløb på 250 kr.
+                </p>
+            </div>
+
+            <!-- KASSE 4 -->
+            <aside class="event-meta">
+                <div class="event-image"></div>
+
+                <div class="event-facts">
+                    <p><strong>Lørdag d. 5. april</strong></p>
+                    <p>09.30 – 15.30</p>
+                    <p>
+                        Skydebanevej 1<br>
+                        9000 Aalborg
+                    </p>
+                </div>
+            </aside>
+
+        </article>
+
+        <!-- EVENT 2 -->
+        <article class="event">
+
+            <div class="event-text">
+                <h2>Chikara Sommerlejr 2025</h2>
+
+                <p>
+                    Selvforsvarsklubben CHIKARA inviterer hermed til sommerlejr i Kungälv.
+                </p>
+
+                <p>
+                    Træningen foregår udendørs på både græsarealer og sten-/grusbelagte flader.
+                </p>
+
+                <ul>
+                    <li>Udendørs træning</li>
+                    <li>Instruktører fra flere lande</li>
+                    <li>Mulighed for overnatning</li>
+                </ul>
+            </div>
+
+            <aside class="event-meta">
+                <div class="event-image"></div>
+
+                <div class="event-facts">
+                    <p><strong>14.–15. juni</strong></p>
+                    <p>Kungälv, Sverige</p>
+                </div>
+            </aside>
+        </article>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </div>
+
+            <div class="footer-links">
+                <a href="Kontakt.html">Find os her</a>
+                <a href="Om.klubben.html">Tilmeld</a>
+                <a href="Praktisk.information.html">Tider</a>
+            </div>
+
         </div>
 
-    </div>
-
-    <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
-</footer>
+        <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>

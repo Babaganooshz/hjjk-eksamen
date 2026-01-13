@@ -11,65 +11,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-<header>
 
-    <div class="header-logo">
-        <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </a>
-    </div>
+<body>
+    <header>
 
-    <ul class="header-links">
-        <li><a href="Arrangementer.html">Arrangementer</a></li>
-
-        <li class="dropdown">
-            <a href="Om.klubben.html">Om klubben</a>
-            <ul class="dropdown-menu">
-                <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
-
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
-            <ul class="dropdown-menu">
-                <li><a href="Budo.regler.html">Budo regler</a></li>
-                <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
-
-            </ul>
-        </li>
-        <li><a href="Praktisk.information.html">Praktisk information</a></li>
-        <li><a href="Kontakt.html">Kontakt</a></li>
-    </ul>
-    <div class="language-switcher">
-        <a href="#">
-            <p class="language">DK</p>
-        </a>
-        <a href="#">
-            <p class="language">EN</p>
-        </a>
-    </div>
-
-</header>
-
-
-
-
-
-
-
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+        <div class="header-logo">
+            <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
         </div>
 
-        <div class="footer-links">
-            <a href="Kontakt.html">Kontakt os her</a>
-            <a href="Om.klubben.html">Holdtider</a>
-            <a href="Praktisk.information.html">Praktisk information</a>
+        <ul class="header-links">
+            <li><a href="Arrangementer.html">Arrangementer</a></li>
+
+            <li class="dropdown">
+                <a href="Om.klubben.html">Om klubben</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Budo.regler.html">Budo regler</a></li>
+                    <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Praktisk.information.html">Praktisk information</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="language-switcher">
+            <a href="#">
+                <p class="language">DK</p>
+            </a>
+            <a href="#">
+                <p class="language">EN</p>
+            </a>
         </div>
+
+    </header>
+
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Kontakt os her:</h2>
+
+            <p><i class="fa-solid fa-envelope"></i>
+                Email: <a href="mailto:von_aaen@yahoo.dk">von_aaen@yahoo.dk</a>
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i>
+                <a href="tel:+4560757536">Telefon: 60 75 75 36</a>
+            </p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Adresse: <a href="https://maps.app.goo.gl/Vtw2qTBHP3pJW53v5">Buen 4, 1. sal, 9800 Hjørring</a>
+            </p>
+
+            <div class="map">
+                <a href="https://maps.app.goo.gl/Vtw2qTBHP3pJW53v5"><img src="assets/IMG/kort.png"
+                        alt="kort/Link til google maps."></a>
+            </div>
+            <h3>Eller find os på sociale medier nedenfor.</h3>
+            <div class="socials">
+                <a href="https://www.facebook.com/groups/484235388306687/"><img
+                        src="assets/IMG/2023_Facebook_icon.svg.png" alt="Facebook logo" id="Logo-links"
+                        class="logo"></a>
+                <a
+                    href="https://www.instagram.com/hjoerring_jiu_jitsu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                        src="assets/IMG/Instagram_logo_2022.svg.webp" alt="Instagram logo" id="Logo-links"
+                        class="logo"></a>
+            </div>
+
+        </div>
+
+        <div class="contact-formular">
+            <form action="#">
+
+                <label for="fornavn">Fornavn *</label>
+                <input type="text" id="fornavn" name="Fornavn" placeholder="Dit fornavn..">
+
+                <label for="efternavn">Efternavn *</label>
+                <input type="text" id="efternavn" name="Efternavn" placeholder="Dit efternavn..">
+
+                <label for="Telefon">Telefon *</label>
+                <input type="text" id="Telefon" name="Telefon" placeholder="Dit telefonnummer..">
+
+                <label for="Email">Email *</label>
+                <input type="text" id="Email" name="Email" placeholder="Din email..">
+
+                <label for="adresse">Adresse *</label>
+                <input type="text" id="Adresse" name="Adresse" placeholder="Din adresse..">
+
+                <label for="postnummer">Postnummer *</label>
+                <input type="text" id="postnummer" name="Postnummer" placeholder="Dit postnummer..">
+
+                <label for="By">By *</label>
+                <input type="text" id="By" name="By" placeholder="Din by..">
+
+                <label for="Hold">Hold *</label>
+                <input type="text" id="Hold" name="Hold" placeholder="Vælg hold..">
+
+                <label for="fødselsdag">Fødselsdag *</label>
+                <input type="text" id="fødselsdag" name="fødselsdag" placeholder="Din fødselsdag..">
+
+                <label for="køn">Køn *</label>
+                <input type="text" id="køn" name="køn" placeholder="Dit køn..">
+
+
+                <input type="submit" value="Tilmeld">
+
+            </form>
+        </div>
+
 
     </div>
 
-    <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
-</footer>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </div>
+
+            <div class="footer-links">
+                <a href="Kontakt.html">Kontakt os her</a>
+                <a href="Om.klubben.html">Holdtider</a>
+                <a href="Praktisk.information.html">Praktisk information</a>
+            </div>
+
+        </div>
+
+        <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+
+</html>

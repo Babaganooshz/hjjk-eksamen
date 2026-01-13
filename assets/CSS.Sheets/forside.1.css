@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     font-family: 'Montserrat', sans-serif;
     color: #3C3C3C;
     letter-spacing: 1px;
@@ -191,10 +192,45 @@ p.utryg {
 
 /*Tekst om klubben*/
 p.klubben {
-    font-size: 20px;
     justify-self: center;
     max-width: 800px;
     width: 100%;
+    padding-bottom: 20px;
+
+}
+
+h1.To-niveauer {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    padding-top: 20px;
+    letter-spacing: 4px;
+    justify-self: center;
+    text-align: center;
+}
+
+button {
+    font-weight: bold;
+    display: flex;
+    color: var(--blackOlive);
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    margin-block: 30px;
+    align-items: center;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: #EE202D;
+    color: #FFFFFF;
+}
+
+
+.hold-tilmeld {
+    justify-self: center;
+    display: flex;
 
 }
 

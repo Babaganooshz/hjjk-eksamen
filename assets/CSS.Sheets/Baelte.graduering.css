@@ -1,150 +1,92 @@
-p,
-a,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #3C3C3C;
-    letter-spacing: 1px;
+/* ===== GRADUERING ===== */
+
+.graduering {
+    background-color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-    color: #3C3C3C
-}
-
-html,
-body {
+/* HERO */
+.graduering-hero img {
     width: 100%;
-    overflow-x: hidden;
-}
-
-br {
-    margin: 10px;
-    position: fixed;
-}
-
-
-
-
-/* Header start */
-header {
-    max-width: 100%;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    padding-block: 20px;
-    max-height: 60px;
-    padding-inline: 10px;
-    align-items: center;
-}
-
-
-
-.language-switcher {
-    display: flex;
-    justify-content: right;
-    font-weight: bold;
-    padding: none;
-}
-
-/*Header + Footer*/
-.header-links a,
-.language-switcher a,
-.footer-links a {
-    color: #3C3C3C;
-    justify-content: center;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    max-width: 90%;
-}
-
-.header-container,
-.footer-container {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding-top: 10px;
-    max-height: 60px;
-    padding-bottom: 25px;
-
-}
-
-.header-links a:hover,
-.language-switcher a:hover,
-.footer-links a:hover {
-    text-decoration: underline;
-    text-decoration-color: #EE202D;
-}
-
-.footer-logo img,
-.header-logo img {
-    height: 70px;
-}
-
-/*Dropdown Menu*/
-.header-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 0;
-
-}
-
-.dropdown:hover .dropdown-menu {
     display: block;
 }
 
+/* CONTENT GRID */
+.graduering-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
 
+/* TEKST */
+.graduering-tekst h1 {
+    margin-bottom: 1.5rem;
+}
 
+.graduering-tekst p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
 
+/* FIGUR */
+.graduering-figur {
+    width: 120px;
+    margin: 2rem auto;
+    display: block;
+}
 
-/*Footer Start*/
-footer {
+/* BÆLTE BILLEDE */
+.graduering-billede {
     width: 100%;
-    background-color: #FFFFFF;
-    max-height: 70px;
-    padding-top: 50px;
-    padding-inline: 10px;
+    max-width: 250px;
+    margin: 2rem 0;
 }
 
-.footer-links {
+/* CTA */
+.cta-knap {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #e0e0e0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* HØJRE SIDE */
+.graduering-side {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 90%;
-
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.footer-text {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 14px;
+.side-billede {
+    width: 100%;
+    height: auto;
+}
+
+/* ===== MOBIL ===== */
+@media (max-width: 768px) {
+
+    .graduering-content {
+        grid-template-columns: 1fr;
+    }
+
+    .graduering-side {
+        display: none;
+    }
+
+    .graduering-billede {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .cta-knap {
+        text-align: center;
+    }
 }

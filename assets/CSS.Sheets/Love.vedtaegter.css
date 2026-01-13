@@ -23,7 +23,6 @@ a:visited {
 
 
 
-
 /* Header start */
 header {
     max-width: 100%;
@@ -136,12 +135,13 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    padding-top: 20px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: underline 1px #3C3C3C;
-    margin: 40px;
     box-sizing: border-box;
     text-underline-offset: 6px;
+    justify-self: center;
 }
 
 h2 a:hover {
