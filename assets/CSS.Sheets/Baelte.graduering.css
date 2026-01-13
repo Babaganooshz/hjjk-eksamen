@@ -148,3 +148,96 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* ===== GRADUERING ===== */
+
+.graduering {
+    background-color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HERO */
+.graduering-hero img {
+    width: 100%;
+    display: block;
+}
+
+/* CONTENT GRID */
+.graduering-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+/* TEKST */
+.graduering-tekst h1 {
+    margin-bottom: 1.5rem;
+}
+
+.graduering-tekst p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* FIGUR */
+.graduering-figur {
+    width: 120px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* BÆLTE BILLEDE */
+.graduering-billede {
+    width: 100%;
+    max-width: 250px;
+    margin: 2rem 0;
+}
+
+/* CTA */
+.cta-knap {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #e0e0e0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* HØJRE SIDE */
+.graduering-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.side-billede {
+    width: 100%;
+    height: auto;
+}
+
+/* ===== MOBIL ===== */
+@media (max-width: 768px) {
+
+    .graduering-content {
+        grid-template-columns: 1fr;
+    }
+
+    .graduering-side {
+        display: none;
+    }
+
+    .graduering-billede {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .cta-knap {
+        text-align: center;
+    }
+}

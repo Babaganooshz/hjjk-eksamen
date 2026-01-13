@@ -214,3 +214,199 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* ===== GENERELT ===== */
+p,
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3C3C3C;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background: #fff;
+}
+
+.header-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-links li {
+    position: relative;
+}
+
+.header-links a {
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #EE202D;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #fff;
+    padding: 50px 10px 20px 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #EE202D;
+}
+
+.footer-text {
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* ===== OM KLUBBEN ===== */
+.om-klubben {
+    background: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    /* alt centreret */
+}
+
+.om-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    /* stak alt lodret */
+    align-items: center;
+    /* centrer horisontalt */
+    gap: 3rem;
+}
+
+.om-tekst {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    /* venstrestillet tekst */
+}
+
+.om-tekst h1,
+.om-tekst h2 {
+    margin-bottom: 1.5rem;
+}
+
+.om-tekst p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* ===== INSTRUKTØRER ===== */
+.instruktoerer {
+    display: flex;
+    justify-content: center;
+    /* centrer instruktører horisontalt */
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.instruktoer {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.instruktoer img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== BILLEDRÆKKE ===== */
+.om-billeder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.om-billeder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ===== RESPONSIV ===== */
+@media (max-width: 768px) {
+    .instruktoerer {
+        flex-direction: column;
+        /* instruktører vertikalt */
+        align-items: center;
+    }
+
+    .om-billeder {
+        grid-template-columns: 1fr;
+        /* kun midterste billede vises */
+    }
+
+    .om-billeder img.desktop-hide {
+        display: none;
+    }
+}
