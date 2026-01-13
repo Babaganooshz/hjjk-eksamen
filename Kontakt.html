@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="Hjørring Jiu-Jitsu Klub-Forside" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS.Sheets/Kontakt.css">
+    <link rel="stylesheet" href="assets/CSS.Sheets/shared.css">
     <title>Hjørring Jiu-Jitsu Klub-Forside</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,9 @@
 
 <body>
     <header>
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu">
+            ☰
+        </button>
 
         <div class="header-logo">
             <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
@@ -50,7 +54,9 @@
                 <p class="language">EN</p>
             </a>
         </div>
-
+        <button class="globe" aria-expanded="false" aria-controls="mobile-menu">
+            🌐
+        </button>
     </header>
 
     <div class="contact-wrapper">
@@ -95,11 +101,8 @@
                 <label for="efternavn">Efternavn *</label>
                 <input type="text" id="efternavn" name="Efternavn" placeholder="Dit efternavn..">
 
-                <label for="Telefon">Telefon *</label>
-                <input type="text" id="Telefon" name="Telefon" placeholder="Dit telefonnummer..">
-
-                <label for="Email">Email *</label>
-                <input type="text" id="Email" name="Email" placeholder="Din email..">
+                <label for="Hold">Hold *</label>
+                <input type="text" id="Hold" name="Hold" placeholder="Vælg hold..">
 
                 <label for="adresse">Adresse *</label>
                 <input type="text" id="Adresse" name="Adresse" placeholder="Din adresse..">
@@ -110,15 +113,17 @@
                 <label for="By">By *</label>
                 <input type="text" id="By" name="By" placeholder="Din by..">
 
-                <label for="Hold">Hold *</label>
-                <input type="text" id="Hold" name="Hold" placeholder="Vælg hold..">
-
                 <label for="fødselsdag">Fødselsdag *</label>
                 <input type="text" id="fødselsdag" name="fødselsdag" placeholder="Din fødselsdag..">
 
                 <label for="køn">Køn *</label>
                 <input type="text" id="køn" name="køn" placeholder="Dit køn..">
 
+                <label for="Telefon">Telefon *</label>
+                <input type="text" id="Telefon" name="Telefon" placeholder="Dit telefonnummer..">
+
+                <label for="Email">Email *</label>
+                <input type="text" id="Email" name="Email" placeholder="Din email..">
 
                 <input type="submit" value="Tilmeld">
 
@@ -137,13 +142,11 @@
             </div>
 
             <div class="footer-links">
-                <a href="Kontakt.html">Kontakt os her</a>
-                <a href="Om.klubben.html">Holdtider</a>
-                <a href="Praktisk.information.html">Praktisk information</a>
+                <a href="Kontakt.html">Find os her</a>
+                <a href="Om.klubben.html">Tilmeld</a>
+                <a href="Praktisk.information.html">Tider</a>
             </div>
-
         </div>
-
         <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
     </footer>
 </body>

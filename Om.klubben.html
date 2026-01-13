@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Hjørring Jiu-Jitsu Klub-Forside" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS.Sheets/om.klubben.css">
-    <title>Hjørring Jiu-Jitsu Klub-Forside</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjørring Jiu-Jitsu Klub - Om klubben</title>
+    <link rel="stylesheet" href="assets/CSS.Sheets/Praktisk.information.css">
+    <link rel="stylesheet" href="assets/CSS.Sheets/shared.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,6 +15,9 @@
 
 <body>
     <header>
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu">
+            ☰
+        </button>
 
         <div class="header-logo">
             <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
@@ -50,16 +54,65 @@
                 <p class="language">EN</p>
             </a>
         </div>
-
+        <button class="globe" aria-expanded="false" aria-controls="mobile-menu">
+            🌐
+        </button>
     </header>
 
+    <main class="om-klubben">
 
+        <!-- HERO -->
+        <section class="om-hero">
+            <img src="assets/IMG/instruktoerer-top.png" alt="Klubbens instruktører">
+        </section>
 
+        <!-- CONTENT -->
+        <section class="om-content">
 
+            <!-- TEKST -->
+            <article class="om-tekst">
+                <h1>Om klubben</h1>
+                <p>Hjørring Jiu-Jitsu Klub blev startet som en Judo og Jiu-Jitsu klub på et nedlagt husmandssted i
+                    nærheden af Tårs i 1953.</p>
+                <p>Dette sted var rammen om klubben, indtil man valgte at flytte ind i gymnastiksalen på den for længst
+                    nedlagte Vestre Skole i Hjørring.</p>
+                <p>Det var i mange år kutyme, at man trænede en times Judo efter endt opvarmning, og så afsluttede man
+                    med en halv times Jiu-Jitsu til slut.</p>
+                <p>I midten af 1980’erne flyttede man til klubbens nuværende lokaler på Buen 4, 1. sal og da man havde
+                    råderetten over hele Dojoen alle ugens syv dage valgte man at splitte klubben op i to selvstændige
+                    klubber, en Judo klub og en Jiu-Jitsu klub med hver sin bestyrelse, som tager sig af det praktiske i
+                    driften af klubben.</p>
+                <p>Derudover har vi en hovedforening som sørger for at betale husleje, varme og el samt tage sig af
+                    kontakten til kommunen omkring tilskud og den slags.</p>
+                <p>Hjørring Jiu-Jitsu har omkring 20–30 medlemmer og får omkring 10 nye medlemmer om året.</p>
+            </article>
 
+            <!-- INSTRUKTØRER -->
+            <h2>Klubbens instruktører</h2>
+            <div class="instruktoerer">
+                <div class="instruktoer">
+                    <img src="assets/IMG/instruktoer1.png" alt="Anders Kabbeltved Pedersen">
+                    <p><strong>Anders<br>Kabbeltved Pedersen</strong><br>6. dan</p>
+                </div>
+                <div class="instruktoer">
+                    <img src="assets/IMG/instruktoer2.png" alt="Morten Aasen Hansen">
+                    <p><strong>Morten Aasen<br>Hansen</strong><br>4. dan</p>
+                </div>
+                <div class="instruktoer">
+                    <img src="assets/IMG/instruktoer3.png" alt="Søren Lie">
+                    <p><strong>Søren<br>Lie</strong><br>2. dan</p>
+                </div>
+            </div>
 
+            <!-- BILLEDRÆKKE -->
+            <div class="om-billeder">
+                <img class="desktop-hide" src="assets/IMG/klub1.jpg" alt="Træning i klubben">
+                <img src="assets/IMG/klub2.jpg" alt="Instruktion">
+                <img class="desktop-hide" src="assets/IMG/klub3.jpg" alt="Fællesskab">
+            </div>
 
-
+        </section>
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
@@ -67,13 +120,13 @@
             </div>
 
             <div class="footer-links">
-                <a href="Kontakt.html">Kontakt os her</a>
-                <a href="Om.klubben.html">Holdtider</a>
-                <a href="Praktisk.information.html">Praktisk information</a>
+                <a href="Kontakt.html">Find os her</a>
+                <a href="Om.klubben.html">Tilmeld</a>
+                <a href="Praktisk.information.html">Tider</a>
             </div>
-
         </div>
-
         <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
     </footer>
 </body>
+
+</html>

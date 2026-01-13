@@ -12,8 +12,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-
-
 a:link {
     text-decoration: none;
 }
@@ -37,33 +35,6 @@ br {
     position: fixed;
 }
 
-
-/*Footer Start*/
-footer {
-    width: 100%;
-    background-color: #FFFFFF;
-    /*     max-height: 70px; */
-    /*     padding-top: 50px; */
-    /*     padding-inline: 10px; */
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 90%;
-
-}
-
-.footer-text {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
 
 /* Header start */
 header {
@@ -157,6 +128,34 @@ header {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+/*Footer Start*/
+footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    /*     max-height: 70px; */
+    /*     padding-top: 50px; */
+    /*     padding-inline: 10px; */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+
+}
+
+.footer-text {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (max-width: 768px) {
     .burger {
