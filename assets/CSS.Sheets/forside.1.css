@@ -195,6 +195,40 @@ p.klubben {
     justify-self: center;
     max-width: 800px;
     width: 100%;
+    padding-bottom: 20px;
+
+}
+
+h1.To-niveauer {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    padding-top: 20px;
+    letter-spacing: 4px;
+    justify-self: center;
+    text-align: left;
+}
+
+button {
+    display: flex;
+    color: var(--blackOlive);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 45px;
+    margin: 0 auto;
+    align-items: center
+}
+
+button:hover {
+    color: #EE202D;
+}
+
+
+.hold-tilmeld {
+    justify-self: center;
+    display: flex;
 
 }
 
