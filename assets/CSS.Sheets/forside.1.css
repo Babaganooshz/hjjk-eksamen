@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     font-family: 'Montserrat', sans-serif;
     color: #3C3C3C;
     letter-spacing: 1px;
@@ -191,7 +192,6 @@ p.utryg {
 
 /*Tekst om klubben*/
 p.klubben {
-    font-size: 20px;
     justify-self: center;
     max-width: 800px;
     width: 100%;
@@ -206,23 +206,25 @@ h1.To-niveauer {
     padding-top: 20px;
     letter-spacing: 4px;
     justify-self: center;
-    text-align: left;
+    text-align: center;
 }
 
 button {
+    font-weight: bold;
     display: flex;
     color: var(--blackOlive);
     padding: 8px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    height: 45px;
-    margin: 0 auto;
-    align-items: center
+    height: 50px;
+    margin-block: 30px;
+    align-items: center;
+    justify-self: center;
 }
 
 button:hover {
-    color: #EE202D;
+    background-color: #EE202D;
+    color: #FFFFFF;
 }
 
 

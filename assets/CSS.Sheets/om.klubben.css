@@ -120,8 +120,16 @@ header {
     display: block;
 }
 
+.medlem1 {
+    display: flex;
 
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.page>* {
+    padding: 1rem;
+}
 
 
 /*Footer Start*/

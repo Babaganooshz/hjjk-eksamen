@@ -120,7 +120,81 @@ header {
     display: block;
 }
 
+/* Kontakt information */
+.contact-info {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 6px;
+    line-height: 2;
+}
 
+img.logo {
+    text-align: center;
+    height: 100px;
+    padding-right: 50px;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/* Kort */
+.map {
+    justify-self: left;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-block: 20px;
+}
+
+/* Formular */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: var(--blackOlive);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--lightGray);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-formular {
+    flex: 1;
+    padding: 2rem;
+}
+
+.contact-wrapper {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 
@@ -130,7 +204,6 @@ footer {
     background-color: #FFFFFF;
     max-height: 70px;
     padding-top: 50px;
-    padding-inline: 10px;
 }
 
 .footer-links {

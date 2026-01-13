@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     font-family: 'Montserrat', sans-serif;
     color: #3C3C3C;
     letter-spacing: 1px;
@@ -31,8 +32,6 @@ br {
     margin: 10px;
     position: fixed;
 }
-
-
 
 
 /* Header start */
@@ -120,6 +119,74 @@ header {
     display: block;
 }
 
+button {
+    font-weight: bold;
+    display: flex;
+    color: var(--blackOlive);
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    margin-block: 30px;
+    align-items: center;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: #EE202D;
+    color: #FFFFFF;
+}
+
+.brodtekst {
+    margin-inline: 60px;
+}
+
+h1 {
+    justify-self: center;
+}
+
+h1.To-niveauer {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 20px;
+    letter-spacing: 4px;
+    justify-self: center;
+    text-align: center;
+}
+
+.medlem1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 30px;
+    padding-block: 10px;
+    padding-left: 70px;
+}
+
+.sidebar {
+    padding: 20px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img.begynderhold {
+    display: block;
+    justify-self: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 60%;
+}
+
+.sidebar2 {
+    height: 260px;
+    padding-top: 80px;
+    justify-content: center;
+}
+
+.sidebar1 {
+    max-width: 500px;
+    justify-content: center;
+}
 
 
 
@@ -130,7 +197,6 @@ footer {
     background-color: #FFFFFF;
     max-height: 70px;
     padding-top: 50px;
-    padding-inline: 10px;
 }
 
 .footer-links {
