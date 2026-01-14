@@ -1,127 +1,4 @@
-p,
-a,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button {
-    font-family: 'Montserrat', sans-serif;
-    color: #3C3C3C;
-    letter-spacing: 1px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-    color: #3C3C3C
-}
-
-html,
-body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-br {
-    margin: 10px;
-    position: fixed;
-}
-
-/* Header start */
-header {
-    max-width: 100%;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    padding-block: 20px;
-    max-height: 60px;
-    padding-inline: 10px;
-    align-items: center;
-}
-
-
-.language-switcher {
-    display: flex;
-    justify-content: right;
-    font-weight: bold;
-    padding: none;
-}
-
-/*Header + Footer*/
-.header-links a,
-.language-switcher a,
-.footer-links a {
-    color: #3C3C3C;
-    justify-content: center;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    max-width: 90%;
-}
-
-.header-container,
-.footer-container {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding-top: 10px;
-    max-height: 60px;
-    padding-bottom: 25px;
-
-}
-
-.header-links a:hover,
-.language-switcher a:hover,
-.footer-links a:hover {
-    text-decoration: underline;
-    text-decoration-color: #EE202D;
-}
-
-.footer-logo img,
-.header-logo img {
-    height: 70px;
-}
-
-/*Dropdown Menu*/
-.header-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 0;
-
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
-
-
 /*Hero*/
-
 .header-banner {
     width: 100%;
     max-height: 290px;
@@ -135,8 +12,6 @@ header {
     margin: 20px;
     justify-self: center;
 }
-
-
 
 /*Selvforsvarskursus*/
 .selvforsvarskursus {
@@ -177,8 +52,6 @@ p.utryg {
     text-align: center;
 }
 
-
-
 /*Forside billeder*/
 .billeder-på-forsiden {
     display: flex;
@@ -187,8 +60,6 @@ p.utryg {
     max-width: 100%;
     align-items: center;
 }
-
-
 
 /*Tekst om klubben*/
 p.klubben {
@@ -227,7 +98,6 @@ button:hover {
     color: #FFFFFF;
 }
 
-
 .hold-tilmeld {
     justify-self: center;
     display: flex;
@@ -250,38 +120,6 @@ h2 {
     box-sizing: border-box;
     text-underline-offset: 6px;
 }
-
-
-
-/*Footer Start*/
-footer {
-    width: 100%;
-    background-color: #FFFFFF;
-    max-height: 70px;
-    padding-top: 50px;
-    padding-inline: 10px;
-
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 90%;
-
-}
-
-.footer-text {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-}
-
-
-
-
 
 
 /*Media quaries*/
@@ -318,24 +156,7 @@ footer {
     /* Header start */
 
 
-    /*Dropdown Menu*/
-    .header-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
 
-    h2 a:hover {
-        color: #EE202D;
-        box-shadow: inset 0 0 0 2px #EE202D;
-        font-weight: bold;
-        text-decoration: underline 1px #EE202D;
-        text-underline-offset: 6px;
-    }
 
     /*Forside billeder*/
     #billede-2,
@@ -348,11 +169,6 @@ footer {
         display: block;
         align-items: center;
     }
-
-
-    /*Tekst om klubben*/
-
-
 
 }
 
