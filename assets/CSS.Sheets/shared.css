@@ -30,6 +30,10 @@ body {
     margin: 0;
 }
 
+body {
+    padding-top: 60px;
+}
+
 br {
     margin: 10px;
     position: fixed;
@@ -38,7 +42,7 @@ br {
 
 /* Header start */
 header {
-    max-width: 100%;
+    width: 100%;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,9 @@ header {
     max-height: 60px;
     padding-inline: 10px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: #3C3C3C solid 1px;
 }
 
 .burger,
@@ -53,11 +60,19 @@ header {
     display: none;
     border: none;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 40px;
     color: #3C3C3C;
 }
 
+.burgerclosed {
+    display: none;
 
+}
+
+.burgeropen {
+    display: block;
+
+}
 
 
 .language-switcher {

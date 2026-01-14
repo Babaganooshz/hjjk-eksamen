@@ -12,12 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="assets/shared.js">
+    </script>
 </head>
 
 <body>
     <header>
-        <button class="burger" aria-expanded="false" aria-controls="mobile-menu">
-            ☰
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleburger()">
+            <img src="assets/IMG/Brugermenu.svg" alt="">
         </button>
 
         <div class="header-logo">
@@ -56,11 +58,34 @@
             </a>
         </div>
         <button class="globe" aria-expanded="false" aria-controls="mobile-menu">
-            🌐
+            <img src="assets/IMG/Globe.svg" alt="">
         </button>
+
     </header>
 
     <main class="arrangementer">
+        <ul class="burgerclosed" id="burgermenu">
+            <li><a href="Arrangementer.html">Arrangementer</a></li>
+
+            <li class="dropdown">
+                <a href="Om.klubben.html">Om klubben</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Budo.regler.html">Budo regler</a></li>
+                    <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Praktisk.information.html">Praktisk information</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
 
         <!-- EVENT 1 -->
         <article class="event">
