@@ -1,46 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Hjørring Jiu-Jitsu Klub</title>
+    <meta name="Hjørring Jiu-Jitsu Klub-Forside" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS.Sheets/forside.1.css">
+    <link rel="stylesheet" href="assets/CSS.Sheets/shared.css">
+    <title>Hjørring Jiu-Jitsu Klub-Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="header-logo">
-                <img src="./assets/img/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-            </div>
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu">
+            ☰
+        </button>
 
-            <div class="header-links">
-                <a href="#">Arrangementer</a>
-                <a href="#">Om klubben</a>
-                <a href="#">Praktisk information</a>
-                <a href="#">Jiu-Jitsu</a>
-                <a href="#">Kontakt</a>
-            </div>
+        <div class="header-logo">
+            <a href="forside.html"><img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </a>
         </div>
 
+        <ul class="header-links">
+            <li><a href="Arrangementer.html">Arrangementer</a></li>
+
+            <li class="dropdown">
+                <a href="Om.klubben.html">Om klubben</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Love.vedtaegter.html">Love og vedtægter</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="Jiu-jitsu.html">Jiu-Jitsu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Budo.regler.html">Budo regler</a></li>
+                    <li><a href="Baelte.graduering.html">Bælter og graduering</a></li>
+
+                </ul>
+            </li>
+            <li><a href="Praktisk.information.html">Praktisk information</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="language-switcher">
+            <a href="#">
+                <p class="language">DK</p>
+            </a>
+            <a href="#">
+                <p class="language">EN</p>
+            </a>
+        </div>
+        <button class="globe" aria-expanded="false" aria-controls="mobile-menu">
+            🌐
+        </button>
     </header>
-</body>
+    <img src="assets/IMG/Headericoon.svg" alt="Hjørring Jiu-Jitsu Klub Banner" class="header-banner">
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="./assets/img/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
-        </div>
-
-        <div class="footer-links">
-            <a href="#">Kontakt os her</a>
-            <a href="#">Holdtider</a>
-            <a href="#">Praktisk information</a>
-        </div>
+    <p id="introteksten">Jiu Jitsu er en japansk selvforsvarskunst, der betyder "den blide teknik", og handler om
+        at bruge
+        modstanderens
+        styrke mod dem selv i stedet for at møde kraft med kraft, så selv en svagere person kan forsvare sig mod
+        en
+        stærkere.
+    </p>
+    <div class="selvforsvarskursus">
+        <h1>SELVFORSVARSKURSUS</h1>
+        <p class="utryg">Føler du dig utryg i hverdagen? <br>Eller vil du bare gerne kunne forsvare dig selv, hvis
+            situationen skulle
+            opstå.
+        </p>
+        <h2><a href=".">Læs om vores selvforsvarskursus her</a></h2>
     </div>
 
-    <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
-</footer>
+    <div class="billeder-på-forsiden">
+        <img src="assets/IMG/sh.fællesbilede1.png" alt="sort/hvid fællesfoto udenfor" width="auto" height="300px"
+            id="billede-1">
+        <img src="assets/IMG/sh.angrebs.png" alt="Et billede af et jiu-jitsu angreb i sort/hvid" width="auto"
+            height="300px" id="billede-2">
+        <img src="assets/IMG/sh.fællesbillede.png" alt="sort/hvid fællesfoto i dojoen 1953" width="auto" height="300px"
+            id="billede-3">
+    </div>
+    <p class="klubben">Hjørring Jiu-Jitsu klub blev grundlagt tilbage i 1953, og er derfor Danmarks ældste
+        selvforsvarsklubbb.</p>
+
+    <p class="klubben">Her i klubben fokuserer på tryghed, respekt og teknikker, der kan bruges i virkelige situationer.
+    </p>
+
+    <p class="klubben">To gange om året i starten af marts og i starten af september starter vi nye begynderhold op hvor
+        man lærer at
+        forsvare sig imod mange forskellige former for angreb</p>
+    <Div class="hold-tilmeld">
+        <h1 class="To-niveauer">To niveauer <br> vælg det der passer til dig</h1>
+    </Div>
+
+    <img src="assets/IMG/BEGYNDER.png" alt="Tider over begynderhold og øvethold" class="begynderhold">
+    <button type="submit">
+        Tilmeld dig her
+    </button>
+    <h2> <a href="Praktisk.information.html">Eller se mere information om hold og træning her</a></h2>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/IMG/klub_logo.png" alt="Hjørring Jiu-Jitsu Klub Logo">
+            </div>
+
+            <div class="footer-links">
+                <a href="Kontakt.html">Find os her</a>
+                <a href="Om.klubben.html">Tilmeld</a>
+                <a href="Praktisk.information.html">Tider</a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; Hjørring Jiu-Jitsu Klub 2024. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
 
 </html>
