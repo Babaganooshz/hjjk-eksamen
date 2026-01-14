@@ -8,8 +8,8 @@
 
 img.logo {
     text-align: center;
-    height: 100px;
-    padding-right: 50px;
+    height: 70px;
+    padding-right: 20px;
 }
 
 
@@ -55,6 +55,19 @@ input[type=submit]:hover {
     background-color: var(--lightGray);
 }
 
+button {
+    font-weight: bold;
+    display: flex;
+    color: var(--blackOlive);
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    margin-block: 30px;
+    align-items: center;
+    justify-self: center;
+}
+
 button:hover {
     background-color: #EE202D;
     color: #FFFFFF;
@@ -63,6 +76,11 @@ button:hover {
 label {
     display: block;
     margin-top: 10px;
+}
+
+.fa-solid:hover {
+    text-decoration: underline;
+    text-decoration-color: #EE202D;
 }
 
 .contact-formular {
