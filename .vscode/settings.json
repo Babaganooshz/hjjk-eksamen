@@ -1,3 +1,14 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "rainbowTags.colors": [
+        "#81FF2E",
+        "#74CFFF",
+        "#9f2efo",
+        "#44B5FO",
+        "#edcb40",
+        "#85ffd5",
+        "#ffc9a8",
+        "#CC57FF"
+    ],
+    "rainbowTags.allowEverywhere": true
 }
