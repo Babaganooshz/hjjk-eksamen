@@ -1,6 +1,20 @@
 /* ===== OM KLUBBEN ===== */
 
 
+.om-billeder {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+section.om-hero {
+    background-color: white;
+    text-align: center;
+
+}
+
 .om-klubben {
     background: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
@@ -57,19 +71,21 @@
 }
 
 /* ===== BILLEDRÆKKE ===== */
+
 .om-billeder {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 3rem 0;
-    justify-items: center;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    max-width: 100%;
     align-items: center;
+    gap: 30px;
 }
 
 .om-billeder img {
-    width: 100%;
     height: auto;
     display: block;
+    height: 300px;
+    border-radius: 1%;
 }
 
 .medlem1 {

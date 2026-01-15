@@ -61,7 +61,8 @@
 .graduering-side {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 12rem;
+    padding-top: 25px;
 }
 
 .side-billede {

@@ -4,10 +4,17 @@
     background-color: #f5f5f5;
 }
 
+.historie-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 25px;
+    align-content: center;
+}
+
 /* HERO */
 .historie-hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -33,24 +40,23 @@
 
 /* BILLEDER */
 .historie-billede {
-    width: 100%;
-    max-width: 260px;
-    margin: 2rem 0;
+    width: 55%;
+    border-radius: 2%;
 }
 
 /* FIGURER */
-.figur {
-    width: 120px;
-    margin: 2rem 0;
+.figur-figur {
+    display: flex;
+    width: 55%;
+    padding-bottom: 40px;
 }
 
-.figur-top {
-    align-self: flex-end;
+.figur-figur2 {
+    display: flex;
+    width: 55%;
 }
 
-.figur-bottom {
-    align-self: flex-start;
-}
+
 
 
 /* ===== RESPONSIV ===== */
