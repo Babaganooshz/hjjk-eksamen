@@ -18,15 +18,11 @@
 
 .budoregler {
     padding-bottom: 20px;
-}
-
-.budo {
-    font-size: 20px;
     justify-self: center;
     max-width: 800px;
-    width: 100%;
-    padding-inline: 10px;
 }
+
+.budo {}
 
 h1 {
     font-size: 30px;

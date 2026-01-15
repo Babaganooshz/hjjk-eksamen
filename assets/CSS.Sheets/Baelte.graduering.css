@@ -11,14 +11,18 @@
     display: block;
 }
 
+h1 {
+    text-align: center;
+}
+
 /* CONTENT GRID */
 .graduering-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
+    margin-inline: 140px;
+    margin-top: 20px;
+
 }
 
 /* TEKST */
@@ -27,7 +31,6 @@
 }
 
 .graduering-tekst p {
-    margin-bottom: 1rem;
     line-height: 1.7;
 }
 
@@ -62,7 +65,8 @@
     display: flex;
     flex-direction: column;
     gap: 12rem;
-    padding-top: 25px;
+    margin-top: 40px;
+    justify-self: center;
 }
 
 .side-billede {

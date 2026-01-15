@@ -13,10 +13,9 @@ h1 {
 .vedtaegter {
     font-size: 26px;
     text-decoration: none;
-    padding-left: 50px;
-    padding-right: 200px;
     text-align: left;
-    line-height: 2;
+    line-height: 2.5;
+
 }
 
 p {
@@ -24,11 +23,12 @@ p {
 }
 
 .summary {
-    padding-left: 100px;
+    padding-left: 140px;
 }
 
 .Text-rum {
-    padding-left: 140px
+    margin-inline: 140px;
+
 }
 
 .klubben {
@@ -53,13 +53,3 @@ h2 a:hover {
     text-decoration: underline 1px #EE202D;
     text-underline-offset: 6px;
 }
-
-/* .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    max-width: 100%;
-    padding: 20px 20px 0px 20px;
-    max-height: 60px;
-} */

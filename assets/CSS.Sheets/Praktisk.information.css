@@ -16,9 +16,7 @@ button:hover {
     color: #FFFFFF;
 }
 
-.brodtekst {
-    margin-inline: 60px;
-}
+
 
 h1 {
     justify-self: center;
@@ -36,9 +34,10 @@ h1.To-niveauer {
 .medlem1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 30px;
+    margin-inline: 140px;
+    justify-self: center;
     padding-block: 10px;
-    padding-left: 70px;
+
 }
 
 .sidebar {

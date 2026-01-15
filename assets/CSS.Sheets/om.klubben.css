@@ -3,7 +3,6 @@
 
 .om-billeder {
     display: flex;
-    padding: 40px;
     justify-content: center;
     max-width: 100%;
     align-items: center;
@@ -19,6 +18,8 @@ section.om-hero {
     background: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin-inline: 87px;
+
 }
 
 .om-content {
