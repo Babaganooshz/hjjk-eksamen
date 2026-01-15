@@ -56,6 +56,19 @@ header {
     z-index: 1;
 }
 
+img.header-banner {
+    width: 90%;
+    justify-content: center;
+    background-color: white;
+    padding-top: 40px;
+}
+
+section.om-hero {
+    background-color: white;
+    text-align: center;
+
+}
+
 .burger,
 .globe {
     display: none;
