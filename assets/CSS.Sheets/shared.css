@@ -53,6 +53,7 @@ header {
     position: fixed;
     top: 0;
     border-bottom: #3C3C3C solid 1px;
+    z-index: 1;
 }
 
 .burger,
