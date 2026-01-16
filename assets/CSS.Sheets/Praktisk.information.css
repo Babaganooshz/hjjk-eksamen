@@ -45,7 +45,9 @@ h1.To-niveauer {
     justify-self: center;
     display: flex;
     flex-direction: column;
+    max-width: 300px;
 }
+
 
 img.begynderhold {
     display: block;
@@ -64,6 +66,14 @@ img.begynderhold {
 .sidebar1 {
     max-width: 500px;
     justify-content: center;
+}
+
+.sidenbar {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding-top: 20px;
 }
 
 /* ===== OM KLUBBEN ===== */
