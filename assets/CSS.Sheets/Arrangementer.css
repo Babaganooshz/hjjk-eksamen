@@ -66,6 +66,11 @@
     max-width: 200px;
 }
 
+.trace:hover {
+    text-decoration: underline;
+    text-decoration-color: #EE202D;
+}
+
 /* ===== RESPONSIV ===== */
 @media (max-width: 768px) {
 
